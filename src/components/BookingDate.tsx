@@ -29,7 +29,7 @@ export function BookingDate(): JSX.Element {
         model.setFrom(`${formatDate}T${fromNewDate}.723Z`);
     }
 
-    function createTo(value: Date) {
+    function createTo(value: Date): void {
         setToDate(value);
         const toNewDate: string = value && new Date(value).toLocaleTimeString('it-IT');
 
